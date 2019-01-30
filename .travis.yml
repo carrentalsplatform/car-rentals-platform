@@ -1,0 +1,9 @@
+matrix:
+  include:
+    - language: csharp
+      mono: none
+      dotnet: 2.2.0
+      before_script:
+      - chmod a+x ./build.sh
+      script:
+      - ./build.sh
