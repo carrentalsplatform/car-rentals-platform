@@ -11,6 +11,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MediatR">
+      <HintPath>..\..\..\..\..\..\..\..\.nuget\packages\mediatr\6.0.0\lib\netstandard2.0\MediatR.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
   <PropertyGroup>
     <CodeAnalysisRuleSet>..\..\..\_stylecop\StyleCopeRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>

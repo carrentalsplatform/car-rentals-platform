@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Reflection;
+using CRP.Fleet.Application.Handlers;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +27,9 @@ namespace API
             {
                 c.SwaggerDoc("v1", new Info { Title = "Car Rental Platform API", Version = "v1" });
             });
+
+            services.AddMediatR();
+            services.AddMediatR(typeof(AddCarCommand).GetTypeInfo().Assembly);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
