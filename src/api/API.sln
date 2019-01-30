@@ -25,6 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{AA5ADE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{65D064AC-C28F-41A8-8914-436E9C478B66}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_stylecop", "_stylecop", "{869B75EB-D044-4475-AF33-2CAD96A767C8}"
+	ProjectSection(SolutionItems) = preProject
+		_stylecop\StyleCopeRules.ruleset = _stylecop\StyleCopeRules.ruleset
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
