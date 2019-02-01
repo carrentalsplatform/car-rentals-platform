@@ -9,3 +9,14 @@ matrix:
       - chmod a+x ./build.sh
       script:
       - ./build.sh
+
+    - language: node_js
+      node_js:
+        - "stable"
+      cache:
+        directories:
+        - "node_modules"
+      before_script:
+        - chmod a+x ./build-client.sh
+      script: 
+        - ./build-client.sh
