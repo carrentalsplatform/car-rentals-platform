@@ -17,6 +17,6 @@ matrix:
         directories:
         - "node_modules"
       before_script:
-        - chmod a+x ./buildclient.sh
+        - chmod a+x ./build-client.sh
       script: 
-        - ./buildclient.sh
+        - ./build-client.sh
