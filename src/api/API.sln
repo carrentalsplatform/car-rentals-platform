@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRP.Fleet.Application", "Modules\Fleet\CRP.Fleet.Application\CRP.Fleet.Application.csproj", "{3F6B02E0-5712-4026-8177-83721091A438}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fleet", "Fleet", "{BBA34C0B-893C-41A1-B273-64F708C6566B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRP.Identity.Application", "Modules\Identity\CRP.Identity.Application\CRP.Identity.Application.csproj", "{B42B9925-6BFF-4784-8452-B315A2D0378E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRP.Rental.Application", "Modules\Rental\CRP.Rental.Application\CRP.Rental.Application.csproj", "{3E353493-E6AA-4145-8502-E5072AD47BEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRP.Notification.Application", "Modules\Notification\CRP.Notification.Application\CRP.Notification.Application.csproj", "{780395A6-0AB0-4799-9DCC-7A810F4AC725}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{0B384B56-EA8F-4FB6-85A5-73F5E9A3CD5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notification", "{D84E596E-8B61-4384-825A-1FA018E60BB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rental", "Rental", "{D2DFBDAC-38C2-402A-AED2-A8CF853CAD59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{AA5ADE0F-5EBA-43FC-843B-72D4C4B07209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{65D064AC-C28F-41A8-8914-436E9C478B66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_stylecop", "_stylecop", "{869B75EB-D044-4475-AF33-2CAD96A767C8}"
+	ProjectSection(SolutionItems) = preProject
+		_stylecop\StyleCopeRules.ruleset = _stylecop\StyleCopeRules.ruleset
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{BEE63E5A-38D8-4496-85D7-C9997C5E3939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F6B02E0-5712-4026-8177-83721091A438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6B02E0-5712-4026-8177-83721091A438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6B02E0-5712-4026-8177-83721091A438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6B02E0-5712-4026-8177-83721091A438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42B9925-6BFF-4784-8452-B315A2D0378E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42B9925-6BFF-4784-8452-B315A2D0378E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42B9925-6BFF-4784-8452-B315A2D0378E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42B9925-6BFF-4784-8452-B315A2D0378E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E353493-E6AA-4145-8502-E5072AD47BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E353493-E6AA-4145-8502-E5072AD47BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E353493-E6AA-4145-8502-E5072AD47BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E353493-E6AA-4145-8502-E5072AD47BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780395A6-0AB0-4799-9DCC-7A810F4AC725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780395A6-0AB0-4799-9DCC-7A810F4AC725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780395A6-0AB0-4799-9DCC-7A810F4AC725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780395A6-0AB0-4799-9DCC-7A810F4AC725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE63E5A-38D8-4496-85D7-C9997C5E3939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE63E5A-38D8-4496-85D7-C9997C5E3939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE63E5A-38D8-4496-85D7-C9997C5E3939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE63E5A-38D8-4496-85D7-C9997C5E3939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F6B02E0-5712-4026-8177-83721091A438} = {BBA34C0B-893C-41A1-B273-64F708C6566B}
+		{BBA34C0B-893C-41A1-B273-64F708C6566B} = {65D064AC-C28F-41A8-8914-436E9C478B66}
+		{B42B9925-6BFF-4784-8452-B315A2D0378E} = {0B384B56-EA8F-4FB6-85A5-73F5E9A3CD5C}
+		{3E353493-E6AA-4145-8502-E5072AD47BEB} = {D2DFBDAC-38C2-402A-AED2-A8CF853CAD59}
+		{780395A6-0AB0-4799-9DCC-7A810F4AC725} = {D84E596E-8B61-4384-825A-1FA018E60BB3}
+		{0B384B56-EA8F-4FB6-85A5-73F5E9A3CD5C} = {65D064AC-C28F-41A8-8914-436E9C478B66}
+		{D84E596E-8B61-4384-825A-1FA018E60BB3} = {65D064AC-C28F-41A8-8914-436E9C478B66}
+		{D2DFBDAC-38C2-402A-AED2-A8CF853CAD59} = {65D064AC-C28F-41A8-8914-436E9C478B66}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDDDB667-F6A0-4AFB-815B-B986F37ED5C0}
+	EndGlobalSection
+EndGlobal
