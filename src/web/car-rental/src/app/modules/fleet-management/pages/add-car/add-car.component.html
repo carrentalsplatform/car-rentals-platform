@@ -1,0 +1,20 @@
+<h3>Add New Car</h3>
+<form [formGroup]="newCarForm" (ngSubmit)="onSubmit()" class="car-form">
+  <mat-form-field>
+    <input matInput placeholder="VIN" formControlName="vin">
+    <mat-error *ngIf="f.vin.hasError('required')">
+      VIN is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Color" formControlName="color">
+    <mat-error *ngIf="f.color.hasError('required')">
+      VIN is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <div class="form-group">
+    <button mat-raised-button color="primary" [disabled]="newCarForm.invalid">Save</button>
+  </div>
+</form>
