@@ -11,6 +11,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CRP.Fleet.Domain\CRP.Fleet.Domain.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <CodeAnalysisRuleSet>..\..\..\_stylecop\StyleCopeRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>

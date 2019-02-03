@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using MediatR;
 
@@ -10,7 +11,7 @@ namespace CRP.Shared.BaseDomainObjects
 
         private List<INotification> domainEvents;
 
-        public virtual int Id { get; protected set; }
+        public virtual Guid Id { get; protected set; }
 
         public IReadOnlyCollection<INotification> DomainEvents => this.domainEvents?.AsReadOnly();
 
@@ -47,7 +48,7 @@ namespace CRP.Shared.BaseDomainObjects
 
         public bool IsTransient()
         {
-            return this.Id == default(int);
+            return this.Id == default(Guid);
         }
 
         public override bool Equals(object obj)
