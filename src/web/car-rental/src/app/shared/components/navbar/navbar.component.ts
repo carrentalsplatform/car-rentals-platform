@@ -10,6 +10,20 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.isUserLogged = true;
   }
 
+  isUserLogged: boolean;
+
+  isUserLoggedIn(): boolean{
+    return this.isUserLogged;
+  }
+
+  logoff(){
+    this.isUserLogged = false;
+  }
+
+  login(){
+    this.isUserLogged = true;
+  }
 }
