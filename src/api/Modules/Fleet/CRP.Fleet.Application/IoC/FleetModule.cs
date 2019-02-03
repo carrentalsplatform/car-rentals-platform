@@ -4,7 +4,6 @@ using CRP.Fleet.Application.Handlers;
 using CRP.Fleet.Domain;
 using CRP.Fleet.Infrastructure;
 using MediatR;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CRP.Fleet.Application.IoC
