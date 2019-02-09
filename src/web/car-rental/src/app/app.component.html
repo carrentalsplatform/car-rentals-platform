@@ -1,16 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
+<div class="bg" flex>
 
-<div class="container">
-  <mat-form-field>
-    <input matInput placeholder="Email address">
+
+<div layout="row" layout-xs="column" class="container" flex="none">
+    
+
+  <mat-form-field appearance="standard">
+      <mat-label>E-mail</mat-label> 
+    <input matInput placeholder="" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
   </mat-form-field>
+ 
+  <mat-form-field appearance="standard" >
+      <mat-label>Hasło</mat-label> 
+      <input matInput placeholder="" [type]="hide ? 'password' : 'text'" >
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
 
+    <button mat-stroked-button >Zaloguj</button>
 
-  <mat-form-field>
-    <input matInput placeholder="Password">
-  </mat-form-field>
 </div>
+</div>
+
+
 
 
 <router-outlet></router-outlet>
