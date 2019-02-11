@@ -8,12 +8,14 @@ import  { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatInputModule, MatFormFieldModule, MatError } from '@angular/material';
 import { ReactiveFormsModule} from '@angular/forms'
 import {MatIconModule} from '@angular/material/icon';
+import { RegisterComponent } from './register/register.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
