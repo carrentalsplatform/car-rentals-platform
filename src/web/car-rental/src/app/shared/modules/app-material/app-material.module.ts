@@ -32,7 +32,6 @@ import {
   MatSortModule,
   MatPaginatorModule
 } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [],
@@ -70,7 +69,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatPaginatorModule
   ],
   exports: [
-    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
