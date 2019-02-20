@@ -1,0 +1,14 @@
+.brand-image{
+    max-width:100px;
+    height: 48px;
+    margin: none;
+  }
+
+  .test{
+    /*flex: 1 100 auto;*/
+    position: absolute;
+    right: 15px;
+    margin: 0;
+  }
+
+  
