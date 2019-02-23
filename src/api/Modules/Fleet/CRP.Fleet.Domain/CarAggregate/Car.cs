@@ -1,16 +1,17 @@
 ﻿using System;
 
-using MediatR;
+using CRP.Shared.BaseDomainObjects;
 
-namespace CRP.Fleet.Application.Handlers
+namespace CRP.Fleet.Domain.CarAggregate
 {
-    public class AddCarCommand : IRequest<Guid>
+    public class Car : Entity, IAggregateRoot
     {
-        public AddCarCommand(string vin, DateTime productionDate, string color)
+        public Car(string vin, DateTime productionDate, string color)
         {
             this.VIN = vin;
             this.ProductionDate = productionDate;
             this.Color = color;
+            this.Mileage = 0;
         }
 
         public string VIN { get; }
@@ -18,5 +19,7 @@ namespace CRP.Fleet.Application.Handlers
         public DateTime ProductionDate { get; }
 
         public string Color { get; }
+
+        public int Mileage { get; }
     }
 }

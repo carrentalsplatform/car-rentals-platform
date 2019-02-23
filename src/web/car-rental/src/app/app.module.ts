@@ -6,13 +6,8 @@ import { AppComponent } from './app.component';
 
 import { AppMaterialModule } from './shared/modules/app-material/app-material.module';
 import  { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatInputModule, MatFormFieldModule, MatError } from '@angular/material';
-import { ReactiveFormsModule} from '@angular/forms'
-import {MatIconModule} from '@angular/material/icon';
 import { FleetLayoutComponent } from './shared/components/fleet-layout/fleet-layout.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-
-
 
 @NgModule({
   declarations: [
@@ -21,14 +16,9 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatIconModule
+    AppRoutingModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

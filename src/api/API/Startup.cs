@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using CRP.Fleet.Application.Handlers;
+﻿using CRP.Fleet.Application.IoC;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,7 +28,7 @@ namespace API
             });
 
             services.AddMediatR();
-            services.AddMediatR(typeof(AddCarCommand).GetTypeInfo().Assembly);
+            services.RegisterFleetModule();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
