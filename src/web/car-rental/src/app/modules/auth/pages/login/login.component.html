@@ -14,7 +14,7 @@
     
     <mat-form-field appearance="standard">
         <mat-label>E-mail</mat-label> 
-      <input matInput placeholder="" [formControl]="email" >
+      <input matInput placeholder=""  >
       <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
   
@@ -31,7 +31,7 @@
       <button mat-stroked-button style="margin-top: 10px;">Zaloguj</button>
     
       <br><br>
-  <p class="txt" style="font-size: medium ;">Zarejestruj się</p>
+  <a routerLink="/register" class="txt" style="font-size: medium ;">Zarejestruj się</a>
   <br>
     
   </div>

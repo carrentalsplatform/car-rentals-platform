@@ -1,3 +1,54 @@
-<p>
-  register works!
-</p>
+<div class="container">
+  
+  <mat-card><br><p style="font-size:16px;">Wypełnij formularz:</p> <br> <br>
+  
+  <mat-form-field class="inp wdth2">
+    <input  matInput placeholder="Imię">
+  </mat-form-field>
+    <mat-form-field class="inp wdth2">
+    <input matInput placeholder="Nazwisko">
+  </mat-form-field>
+  <br><br>
+  
+  <mat-form-field class="inp wdth1">
+    <input matInput placeholder="Email" type="email" >
+  </mat-form-field>
+  <br><br>
+  <mat-form-field class="inp wdth2" >
+    <input matInput placeholder="Hasło" >
+  </mat-form-field>
+    <mat-form-field class="inp wdth2">
+    <input matInput placeholder="Powtórz hasło" >
+  </mat-form-field>
+  <br><br>
+  
+  <mat-form-field class="inp wdth2">
+    <input matInput placeholder="Miasto">
+  </mat-form-field>
+  <mat-form-field class="inp wdth3">
+    <input matInput placeholder="Kod pocztowy"  #input maxlength="5">
+  </mat-form-field>
+  <br><br>
+  <mat-form-field class="inp wdth2">
+    <input matInput placeholder="Ulica">
+   </mat-form-field>
+  <mat-form-field class="inp wdth3">
+    <input matInput placeholder="Numer domu">
+  </mat-form-field>
+  <mat-form-field class="inp wdth3">
+    <input matInput placeholder="Numer mieszkania" [style.font-size.px]="16">
+  </mat-form-field><br><br>
+  <mat-form-field class="inp">
+    <input matInput placeholder="Numer telefonu" type="text" #input maxlength="12" value="+48">
+  </mat-form-field>
+  <br><br>
+
+  <button mat-button class="btn">Zapisz</button>
+<br>
+</mat-card>
+</div>
+
+
+
+
+
